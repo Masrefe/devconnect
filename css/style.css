@@ -1,0 +1,153 @@
+body {
+  font-family: arial;
+  background: #f8f9f9;
+}
+
+html,
+body,
+ul,
+ol,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#main-nav {
+  background: #032f3e;
+}
+
+#main-nav ul {
+  width: 100%;
+}
+
+#main-nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main-nav li {
+  float: left;
+  width: 16.66667%;
+}
+
+@media screen and (max-width: 500px) {
+  #main-nav li {
+    width: 100%;
+  }
+}
+
+#main-nav a {
+  color: #f9f8f8;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#main-nav a:hover {
+  background: #044156;
+}
+
+section h1 {
+  font-size: 28px;
+  color: #032f3e;
+}
+
+.lead-banner,
+.lession-banner {
+  width: 100%;
+  position: relative;
+  color: #032f3e;
+  text-align: center;
+}
+
+.lead-banner .banner-content,
+.lession-banner .banner-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.lead-banner img,
+.lession-banner img {
+  width: 100%;
+}
+
+.lead-banner span,
+.lession-banner span {
+  font-size: 48px;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+}
+
+.lead-banner span.title,
+.lession-banner span.title {
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+#services li {
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  width: 33.33333%;
+}
+
+#services img {
+  max-width: 50%;
+  margin: 20px 20%;
+}
+
+#services a {
+  text-decoration: none;
+  color: #032f3e;
+  font-weight: bold;
+}
+
+#services a:hover {
+  color: red;
+}
+
+#services ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#projects li {
+  float: left;
+  width: 25%;
+}
+
+#projects li img {
+  width: 100%;
+}

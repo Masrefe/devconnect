@@ -1,0 +1,40 @@
+//mixin
+@mixin banner {
+  width: 100%;
+  position: relative;
+  color: $deepBlue;
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    font-size: $bannerheading;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+  }
+  span.title {
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+}
+// Ul mixin
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+// responsive
+
+@mixin mQ($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}

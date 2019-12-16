@@ -1,0 +1,75 @@
+@import "reset";
+@import "variable";
+@import "mixin";
+
+#main-nav {
+  background: $deepBlue;
+  ul {
+    width: 100%;
+    @include clearfix;
+  }
+  li {
+    float: left;
+    width: (100% / 6);
+    @include mQ(500px) {
+      width: 100%;
+    }
+  }
+  a {
+    color: $offwhite;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+      background: lighten($deepBlue, 5);
+    }
+  }
+}
+
+section h1 {
+  font-size: $sectionheading;
+  color: $deepBlue;
+}
+
+//add mixin
+.lead-banner,
+.lession-banner {
+  @include banner;
+  text-align: center;
+}
+
+// services
+#services {
+  li {
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    width: (100% / 3);
+  }
+  img {
+    max-width: 50%;
+    margin: 20px 20%;
+  }
+  a {
+    text-decoration: none;
+    color: $deepBlue;
+    font-weight: bold;
+    &:hover {
+      color: red;
+    }
+  }
+  ul {
+    @include clearfix;
+  }
+}
+
+// make a grid by math
+#projects li {
+  float: left;
+  width: (100% / 4);
+  img {
+    width: 100%;
+  }
+}
